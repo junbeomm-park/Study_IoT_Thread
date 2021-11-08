@@ -48,14 +48,7 @@ public class ThreadTest02 {
 		
 		t1.start();
 		t2.start();
-		for (int i = 0; i <= 10; i++) {
-			System.out.println("main : "+i);
-			try {
-				Thread.sleep(200);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+		
 		System.out.println("*****************프로그램종료**********************");
 	}
 }
